@@ -1,0 +1,15 @@
+# Draft files (already consolidated into final pages)
+stitch_rju_antigravity/
+stitch_rju_antigravity.zip
+project_plan_upt_ppd_nganjuk_website.html
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

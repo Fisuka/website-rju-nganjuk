@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html class="light" lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Informasi Retribusi Jasa Usaha | UPT PPD Nganjuk</title>
+  <meta name="description" content="Informasi lengkap mengenai katalog objek retribusi, tarif resmi, prosedur pengajuan, dan persyaratan retribusi jasa usaha di UPT PPD Nganjuk.">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed":"#d5e3ff","inverse-on-surface":"#ecf1ff","on-primary":"#ffffff",
+            "on-tertiary-container":"#ffb033","on-secondary":"#ffffff","surface-dim":"#cfdaf2",
+            "primary-container":"#1a4f8b","secondary":"#405f8e","inverse-primary":"#a6c8ff",
+            "tertiary":"#4f3100","outline-variant":"#c2c6d1","on-surface":"#111c2d",
+            "on-error":"#ffffff","tertiary-container":"#6d4600","on-secondary-container":"#335381",
+            "on-primary-fixed":"#001c3b","primary-fixed-dim":"#a6c8ff","surface-container":"#e7eeff",
+            "error":"#ba1a1a","background":"#f9f9ff","on-background":"#111c2d",
+            "on-primary-container":"#9bc2ff","inverse-surface":"#263143",
+            "surface-container-low":"#f0f3ff","surface-container-lowest":"#ffffff",
+            "on-tertiary-fixed-variant":"#633f00","on-secondary-fixed":"#001c3b",
+            "surface-bright":"#f9f9ff","on-tertiary":"#ffffff","on-error-container":"#93000a",
+            "on-secondary-fixed-variant":"#264774","surface-tint":"#2f5f9c","surface":"#f9f9ff",
+            "surface-variant":"#d8e3fb","outline":"#737781","tertiary-fixed":"#ffddb4",
+            "tertiary-fixed-dim":"#ffb955","surface-container-high":"#dee8ff","primary":"#00386c",
+            "secondary-fixed-dim":"#a8c8fd","secondary-fixed":"#d5e3ff",
+            "on-surface-variant":"#424750","on-primary-fixed-variant":"#0c4783",
+            "on-tertiary-fixed":"#291800","secondary-container":"#a8c8fd",
+            "surface-container-highest":"#d8e3fb","error-container":"#ffdad6"
+          },
+          fontFamily: {
+            "headline":["Plus Jakarta Sans"],"body":["Inter"],"label":["Inter"],
+            "plus-jakarta-sans":["Plus Jakarta Sans"]
+          },
+          borderRadius: {"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-surface font-body text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm transition-shadow">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="text-xl font-extrabold text-primary font-headline tracking-tight">UPT PPD Nganjuk</a>
+      <div class="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+        <a class="font-headline font-bold text-sm tracking-tight text-on-surface-variant hover:text-primary transition-colors" href="index.html">Beranda</a>
+        <a class="font-headline font-bold text-sm tracking-tight text-on-surface-variant hover:text-primary transition-colors" href="profil.html">Profil</a>
+        <a class="font-headline font-bold text-sm tracking-tight text-primary border-b-2 border-primary pb-1" href="retribusi.html">Retribusi</a>
+        <a class="font-headline font-bold text-sm tracking-tight text-on-surface-variant hover:text-primary transition-colors" href="faq.html">FAQ</a>
+        <a class="font-headline font-bold text-sm tracking-tight text-on-surface-variant hover:text-primary transition-colors" href="kontak.html">Kontak</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="kontak.html" class="hidden md:inline-flex bg-primary text-on-primary px-6 py-2 rounded-md font-bold text-sm hover:opacity-90 transition-all active:scale-95">Hubungi Kami</a>
+        <button id="hamburger" class="md:hidden hamburger flex flex-col gap-[6px] p-2 text-primary" aria-label="Toggle Menu">
+          <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div id="mobile-nav" class="mobile-nav md:hidden">
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a class="active" href="retribusi.html">Retribusi</a>
+    <a href="faq.html">FAQ</a>
+    <a href="kontak.html">Kontak & Pengaduan</a>
+  </div>
+
+  <main class="pt-24 pb-20">
+
+    <!-- ===== PAGE HEADER ===== -->
+    <header class="bg-surface-container-low py-12 mb-12">
+      <div class="max-w-7xl mx-auto px-8">
+        <nav class="flex mb-4 text-xs font-medium text-on-surface-variant tracking-wider uppercase">
+          <a class="hover:text-primary transition-colors" href="index.html">Beranda</a>
+          <span class="mx-2 opacity-50">/</span>
+          <span class="text-primary">Retribusi</span>
+        </nav>
+        <h1 class="font-headline text-4xl md:text-5xl font-extrabold text-primary tracking-tight">Informasi Retribusi Jasa Usaha</h1>
+        <div class="h-1.5 w-24 bg-tertiary mt-6 rounded-full"></div>
+      </div>
+    </header>
+
+    <!-- ===== PENGANTAR ===== -->
+    <section class="max-w-7xl mx-auto px-8 mb-20">
+      <div class="grid md:grid-cols-12 gap-12 items-start">
+        <div class="md:col-span-7 reveal">
+          <h2 class="font-headline text-2xl font-bold text-on-surface mb-4">Pengertian Retribusi Jasa Usaha</h2>
+          <p class="text-on-surface-variant leading-relaxed mb-8">
+            Retribusi jasa usaha adalah pungutan daerah sebagai pembayaran atas jasa pelayanan yang disediakan Pemerintah Daerah dengan prinsip komersial (mencari untung secara wajar). Jasa ini disediakan karena belum memadai disediakan swasta atau memanfaatkan kekayaan daerah.
+          </p>
+          <h3 class="font-headline text-xl font-bold text-on-surface mb-4">Dasar Hukum</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary mt-1" style="font-size: 20px;">gavel</span>
+              <span class="text-on-surface-variant text-sm">Undang-Undang No. 1 Tahun 2022 tentang Hubungan Keuangan antara Pemerintah Pusat dan Pemerintahan Daerah (HKPD).</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary mt-1" style="font-size: 20px;">gavel</span>
+              <span class="text-on-surface-variant text-sm">Peraturan Daerah (Perda) Provinsi Jawa Timur Nomor 8 Tahun 2023 tentang Pajak Daerah dan Retribusi Daerah</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary mt-1" style="font-size: 20px;">gavel</span>
+              <span class="text-on-surface-variant text-sm">Peraturan Gubernur (Pergub) Provinsi Jawa Timur Nomor 30 Tahun 2024 tentang Petunjuk Pelaksanaan Pemungutan Retribusi Daerah</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary mt-1" style="font-size: 20px;">gavel</span>
+              <span class="text-on-surface-variant text-sm">Peraturan Gubernur (Pergub) Provinsi Jawa Timur Nomor 23 Tahun 2023 tentang Penyesuaian Tarif Retribusi Daerah</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary mt-1" style="font-size: 20px;">gavel</span>
+              <span class="text-on-surface-variant text-sm">Peraturan Gubernur Jawa Timur Nomor 20 Tahun 2025 tentang Peninjauan Tarif Retribusi Daerah</span>
+            </li>
+          </ul>
+        </div>
+        <div class="md:col-span-5 reveal">
+          <div class="aspect-square bg-surface-container-highest rounded-3xl overflow-hidden shadow-lg relative group">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Pergub Jatim No 20 Tahun 2025" src="assets/images/Pergub Jatim No 20 Thn 2025.png">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KATALOG OBJEK ===== -->
+    <section class="bg-surface-container-low py-20 mb-20">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="text-center mb-16 reveal">
+          <span class="text-tertiary font-bold tracking-widest text-xs uppercase mb-2 block">Daftar Inventaris</span>
+          <h2 class="font-headline text-3xl font-extrabold text-on-surface">Katalog Objek Retribusi</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Item 1 -->
+          <div class="bg-surface-container-lowest p-2 rounded-2xl group transition-all duration-300 hover:shadow-lg hover:-translate-y-1 reveal">
+            <div class="h-56 rounded-xl overflow-hidden mb-6 relative">
+              <img class="w-full h-full object-cover" alt="Lahan Promosi Tenda/Non Tenda Indoor" src="assets/images/Space Promosi TendaNon Tenda Indoor.png">
+              <div class="absolute top-4 left-4 bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Tersedia</div>
+            </div>
+            <div class="px-4 pb-6">
+              <h3 class="font-headline font-bold text-xl mb-2">Lahan Promosi</h3>
+              <p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Lahan strategis untuk promosi outdoor.</p>
+              <a href="kontak.html" class="w-full py-3 bg-surface-container-high text-primary font-bold text-sm rounded-lg hover:bg-primary hover:text-white transition-all duration-300 flex items-center justify-center gap-2">
+                Ajukan Permohonan <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="bg-surface-container-lowest p-2 rounded-2xl group transition-all duration-300 hover:shadow-lg hover:-translate-y-1 reveal">
+            <div class="h-56 rounded-xl overflow-hidden mb-6 relative">
+              <img class="w-full h-full object-cover" alt="Banner Outdoor" src="assets/images/Banner Outdoor.png">
+              <div class="absolute top-4 left-4 bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Tersedia</div>
+            </div>
+            <div class="px-4 pb-6">
+              <h3 class="font-headline font-bold text-xl mb-2">Banner & Baliho Outdoor</h3>
+              <p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Ruang promosi banner, spanduk, dan baliho di area strategis.</p>
+              <a href="kontak.html" class="w-full py-3 bg-surface-container-high text-primary font-bold text-sm rounded-lg hover:bg-primary hover:text-white transition-all duration-300 flex items-center justify-center gap-2">
+                Ajukan Permohonan <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="bg-surface-container-lowest p-2 rounded-2xl group transition-all duration-300 hover:shadow-lg hover:-translate-y-1 reveal">
+            <div class="h-56 rounded-xl overflow-hidden mb-6 relative">
+              <img class="w-full h-full object-cover" alt="Videotron / TV Indoor" src="assets/images/Promosi Video TV Indoor.png">
+              <div class="absolute top-4 left-4 bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Premium</div>
+            </div>
+            <div class="px-4 pb-6">
+              <h3 class="font-headline font-bold text-xl mb-2">Videotron LED</h3>
+              <p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Media promosi digital modern di lokasi premium.</p>
+              <a href="kontak.html" class="w-full py-3 bg-surface-container-high text-primary font-bold text-sm rounded-lg hover:bg-primary hover:text-white transition-all duration-300 flex items-center justify-center gap-2">
+                Ajukan Permohonan <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TABEL TARIF ===== -->
+    <section class="max-w-7xl mx-auto px-8 mb-20">
+      <div class="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-6 reveal">
+        <div>
+          <h2 class="font-headline text-3xl font-extrabold text-on-surface mb-2">Tabel Tarif Resmi</h2>
+          <p class="text-on-surface-variant">Penetapan tarif berdasarkan jenis pemanfaatan aset.</p>
+        </div>
+        <div class="bg-tertiary-fixed px-4 py-2 rounded-lg flex items-center gap-3">
+          <span class="material-symbols-outlined text-on-tertiary-fixed">info</span>
+          <span class="text-on-tertiary-fixed text-xs font-bold uppercase tracking-tight">Update: Pergub Jatim No. 20/2025</span>
+        </div>
+      </div>
+      <div class="overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm border border-outline-variant/10 table-responsive reveal">
+        <table class="w-full text-left border-collapse">
+          <thead class="bg-primary text-on-primary font-headline">
+            <tr>
+              <th class="px-6 py-4 text-sm font-bold uppercase tracking-wider">Jenis Retribusi</th>
+              <th class="px-6 py-4 text-sm font-bold uppercase tracking-wider">Satuan</th>
+              <th class="px-6 py-4 text-sm font-bold uppercase tracking-wider text-right">Tarif</th>
+            </tr>
+          </thead>
+          <tbody class="text-on-surface">
+            <tr class="hover:bg-surface-container-low transition-colors">
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Pemakaian Ruang/Gedung Kantor (Aula Utama)</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Per m² per bulan</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5 text-right font-bold">Rp15.000</td>
+            </tr>
+            <tr class="bg-surface-container-low/30 hover:bg-surface-container-low transition-colors">
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Pemasangan Spanduk/Banner/Baliho (1-4m²)</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Per m² per bulan</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5 text-right font-bold">Rp30.000</td>
+            </tr>
+            <tr class="hover:bg-surface-container-low transition-colors">
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Pemasangan Spanduk/Banner/Baliho (4-8m²)</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Per m² per bulan</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5 text-right font-bold">Rp45.000</td>
+            </tr>
+            <tr class="bg-surface-container-low/30 hover:bg-surface-container-low transition-colors">
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Pemasangan Spanduk/Banner/Baliho (&gt;8m²)</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Per m² per bulan</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5 text-right font-bold">Rp65.000</td>
+            </tr>
+            <tr class="hover:bg-surface-container-low transition-colors">
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Lahan Kegiatan Promosi (Tenda/Non Tenda)</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Per titik per unit per hari</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5 text-right font-bold">Rp30.000</td>
+            </tr>
+            <tr class="bg-surface-container-low/30 hover:bg-surface-container-low transition-colors">
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Mesin Penjualan Otomatis/Manual</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Per titik per unit per bulan</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5 text-right font-bold">Rp600.000</td>
+            </tr>
+            <tr class="hover:bg-surface-container-low transition-colors">
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Foodtruck/Mobil Usaha</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Per titik per unit per hari</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5 text-right font-bold">Rp30.000</td>
+            </tr>
+            <tr class="bg-surface-container-low/30 hover:bg-surface-container-low transition-colors">
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Kotak Promosi/Brosur/Rak/Signage</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Per titik per bulan</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5 text-right font-bold">Rp100.000</td>
+            </tr>
+            <tr class="hover:bg-surface-container-low transition-colors">
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Running Text LED (Durasi up to 10s)</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Per tayang</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5 text-right font-bold">Rp150</td>
+            </tr>
+            <tr class="bg-surface-container-low/30 hover:bg-surface-container-low transition-colors">
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Highlight TV (Slide/Video)</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Per tayang</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5 text-right font-bold">Rp75.000</td>
+            </tr>
+            <tr class="hover:bg-surface-container-low transition-colors">
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Neonbox/Billboard/LED (1-4m²)</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Per unit per bulan</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5 text-right font-bold">Rp500.000</td>
+            </tr>
+            <tr class="bg-surface-container-low/30 hover:bg-surface-container-low transition-colors">
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Neonbox/Billboard/LED (4-8m²)</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Per unit per bulan</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5 text-right font-bold">Rp750.000</td>
+            </tr>
+            <tr class="hover:bg-surface-container-low transition-colors">
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Neonbox/Billboard/LED (&gt;8m²)</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5">Per unit per bulan</td>
+              <td class="px-6 py-4 text-sm border-b border-outline-variant/5 text-right font-bold">Rp1.000.000</td>
+            </tr>
+            <tr class="bg-surface-container-low/30 hover:bg-surface-container-low transition-colors">
+              <td class="px-6 py-4 text-sm">Pemanfaatan Lahan Untuk Lembaga Keuangan/Non Keuangan</td>
+              <td class="px-6 py-4 text-sm">Per titik per unit per bulan</td>
+              <td class="px-6 py-4 text-sm text-right font-bold">Rp3.000.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===== PROSEDUR PENGAJUAN ===== -->
+    <section class="bg-primary py-20 mb-20">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="text-center mb-16 reveal">
+          <h2 class="font-headline text-3xl font-extrabold text-on-primary">Alur Prosedur Pengajuan</h2>
+          <p class="text-on-primary-container mt-4">Proses transparan dan akuntabel sesuai standar layanan publik.</p>
+        </div>
+        <div class="relative grid grid-cols-1 md:grid-cols-5 gap-4">
+          <div class="relative z-10 text-center group reveal">
+            <div class="w-16 h-16 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-primary transition-all duration-300 group-hover:scale-110 group-hover:bg-tertiary group-hover:text-white">
+              <span class="material-symbols-outlined text-2xl">edit_document</span>
+            </div>
+            <h4 class="text-on-primary font-bold text-sm mb-2">Permohonan</h4>
+            <p class="text-on-primary-container text-xs px-4">Pengajuan surat permohonan pemanfaatan.</p>
+          </div>
+          <div class="relative z-10 text-center group reveal">
+            <div class="w-16 h-16 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-primary transition-all duration-300 group-hover:scale-110 group-hover:bg-tertiary group-hover:text-white">
+              <span class="material-symbols-outlined text-2xl">verified</span>
+            </div>
+            <h4 class="text-on-primary font-bold text-sm mb-2">Verifikasi</h4>
+            <p class="text-on-primary-container text-xs px-4">Pemeriksaan kelayakan dan ketersediaan objek.</p>
+          </div>
+          <div class="relative z-10 text-center group reveal">
+            <div class="w-16 h-16 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-primary transition-all duration-300 group-hover:scale-110 group-hover:bg-tertiary group-hover:text-white">
+              <span class="material-symbols-outlined text-2xl">payments</span>
+            </div>
+            <h4 class="text-on-primary font-bold text-sm mb-2">Pembayaran</h4>
+            <p class="text-on-primary-container text-xs px-4">Pembayaran retribusi sesuai tarif resmi.</p>
+          </div>
+          <div class="relative z-10 text-center group reveal">
+            <div class="w-16 h-16 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-primary transition-all duration-300 group-hover:scale-110 group-hover:bg-tertiary group-hover:text-white">
+              <span class="material-symbols-outlined text-2xl">handshake</span>
+            </div>
+            <h4 class="text-on-primary font-bold text-sm mb-2">Perjanjian</h4>
+            <p class="text-on-primary-container text-xs px-4">Penandatanganan dokumen perjanjian.</p>
+          </div>
+          <div class="relative z-10 text-center group reveal">
+            <div class="w-16 h-16 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-primary transition-all duration-300 group-hover:scale-110 group-hover:bg-tertiary group-hover:text-white">
+              <span class="material-symbols-outlined text-2xl">task_alt</span>
+            </div>
+            <h4 class="text-on-primary font-bold text-sm mb-2">Pemanfaatan</h4>
+            <p class="text-on-primary-container text-xs px-4">Objek dapat digunakan sesuai durasi.</p>
+          </div>
+          <!-- Connector Line -->
+          <div class="hidden md:block step-connector"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PERSYARATAN & X-BANNER ===== -->
+    <section class="max-w-7xl mx-auto px-8 mb-20">
+      <div class="bg-surface-container-highest rounded-3xl p-8 md:p-12 reveal">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-outline-variant/10">
+              <h3 class="font-headline text-3xl font-extrabold text-primary mb-6">Persyaratan Umum</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3 text-sm text-on-surface-variant">
+                  <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                  Kartu Identitas (KTP) Pemohon
+                </li>
+                <li class="flex items-start gap-3 text-sm text-on-surface-variant">
+                  <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                  Akta Pendirian (Jika Badan Hukum)
+                </li>
+                <li class="flex items-start gap-3 text-sm text-on-surface-variant">
+                  <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                  NPWP Pemohon/Perusahaan
+                </li>
+                <li class="flex items-start gap-3 text-sm text-on-surface-variant">
+                  <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                  Surat Pernyataan Kesanggupan Membayar
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="aspect-square rounded-2xl overflow-hidden shadow-lg relative group">
+            <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="assets/images/X-Banner.png" alt="X-Banner Retribusi Jasa Usaha UPT PPD Nganjuk">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-surface-container-low w-full pt-16 pb-8 font-plus-jakarta-sans text-sm md:text-base">
+    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-20">
+      <div>
+        <div class="text-2xl font-black text-primary mb-6">UPT PPD Nganjuk</div>
+        <p class="text-on-surface-variant leading-relaxed max-w-sm">Unit Pelaksana Teknis Pengelolaan Pendapatan Daerah Nganjuk</p>
+        <p class="text-on-surface-variant leading-relaxed max-w-sm mt-1">Jalan Anjuk Ladang Kotak Pos 7, Bedingin, Sukorejo, Kab. Nganjuk</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-primary mb-6 uppercase tracking-wider">Navigasi</h4>
+        <div class="flex flex-col gap-3">
+          <a class="text-on-surface-variant hover:text-tertiary transition-colors" href="index.html">Beranda</a>
+          <a class="text-on-surface-variant hover:text-tertiary transition-colors" href="profil.html">Profil</a>
+          <a class="font-bold text-primary" href="retribusi.html">Retribusi</a>
+          <a class="text-on-surface-variant hover:text-tertiary transition-colors" href="faq.html">FAQ</a>
+          <a class="text-on-surface-variant hover:text-tertiary transition-colors" href="kontak.html">Kontak</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-bold text-primary mb-6 uppercase tracking-wider">Layanan</h4>
+        <div class="flex flex-col gap-3">
+          <a class="text-on-surface-variant hover:text-tertiary transition-colors" href="retribusi.html">Info Retribusi</a>
+          <a class="text-on-surface-variant hover:text-tertiary transition-colors" href="faq.html">FAQ</a>
+          <a class="text-on-surface-variant hover:text-tertiary transition-colors" href="kontak.html">Pengaduan</a>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-outline-variant/20">
+      <p class="text-center text-on-surface-variant">© 2026 UPT PPD Nganjuk. Bapenda Jawa Timur.</p>
+    </div>
+  </footer>
+
+  <!-- Floating Elements -->
+  <div class="fixed bottom-8 right-8 z-[99]">
+    <div class="group relative flex items-center justify-center">
+      <div class="absolute right-full mr-4 bg-tertiary-fixed text-on-tertiary-fixed px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap font-headline font-bold text-sm shadow-lg pointer-events-none">WhatsApp Support</div>
+      <a href="https://wa.me/628113136111" target="_blank" class="bg-tertiary-fixed text-on-tertiary-fixed rounded-full p-4 w-16 h-16 flex items-center justify-center shadow-lg hover:scale-110 hover:rotate-12 transition-transform cursor-pointer animate-bounce-subtle">
+        <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+      </a>
+    </div>
+  </div>
+  <button id="back-to-top" class="back-to-top bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg hover:scale-110 transition-transform" aria-label="Kembali ke atas">
+    <span class="material-symbols-outlined">keyboard_arrow_up</span>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html class="light" lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>FAQ — Pertanyaan Umum | UPT PPD Nganjuk</title>
+  <meta name="description" content="Temukan jawaban cepat mengenai layanan retribusi jasa usaha, prosedur pengajuan, pembayaran, dan perpanjangan di UPT PPD Nganjuk.">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed":"#d5e3ff","inverse-on-surface":"#ecf1ff","on-primary":"#ffffff",
+            "on-tertiary-container":"#ffb033","on-secondary":"#ffffff","surface-dim":"#cfdaf2",
+            "primary-container":"#1a4f8b","secondary":"#405f8e","inverse-primary":"#a6c8ff",
+            "tertiary":"#4f3100","outline-variant":"#c2c6d1","on-surface":"#111c2d",
+            "on-error":"#ffffff","tertiary-container":"#6d4600","on-secondary-container":"#335381",
+            "on-primary-fixed":"#001c3b","primary-fixed-dim":"#a6c8ff","surface-container":"#e7eeff",
+            "error":"#ba1a1a","background":"#f9f9ff","on-background":"#111c2d",
+            "on-primary-container":"#9bc2ff","inverse-surface":"#263143",
+            "surface-container-low":"#f0f3ff","surface-container-lowest":"#ffffff",
+            "on-tertiary-fixed-variant":"#633f00","on-secondary-fixed":"#001c3b",
+            "surface-bright":"#f9f9ff","on-tertiary":"#ffffff","on-error-container":"#93000a",
+            "on-secondary-fixed-variant":"#264774","surface-tint":"#2f5f9c","surface":"#f9f9ff",
+            "surface-variant":"#d8e3fb","outline":"#737781","tertiary-fixed":"#ffddb4",
+            "tertiary-fixed-dim":"#ffb955","surface-container-high":"#dee8ff","primary":"#00386c",
+            "secondary-fixed-dim":"#a8c8fd","secondary-fixed":"#d5e3ff",
+            "on-surface-variant":"#424750","on-primary-fixed-variant":"#0c4783",
+            "on-tertiary-fixed":"#291800","secondary-container":"#a8c8fd",
+            "surface-container-highest":"#d8e3fb","error-container":"#ffdad6"
+          },
+          fontFamily: {
+            "headline":["Plus Jakarta Sans"],"body":["Inter"],"label":["Inter"],
+            "plus-jakarta-sans":["Plus Jakarta Sans"]
+          },
+          borderRadius: {"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-surface font-body text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm transition-shadow">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="text-xl font-extrabold text-primary font-headline tracking-tight">UPT PPD Nganjuk</a>
+      <div class="hidden md:flex items-center space-x-8 absolute left-1/2 -translate-x-1/2">
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-headline font-bold text-sm tracking-tight" href="index.html">Beranda</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-headline font-bold text-sm tracking-tight" href="profil.html">Profil</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-headline font-bold text-sm tracking-tight" href="retribusi.html">Retribusi</a>
+        <a class="text-primary border-b-2 border-primary pb-1 font-headline font-bold text-sm tracking-tight" href="faq.html">FAQ</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-headline font-bold text-sm tracking-tight" href="kontak.html">Kontak</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="kontak.html" class="hidden md:inline-flex bg-primary text-on-primary px-6 py-2 rounded-md font-bold text-sm hover:opacity-90 transition-all active:scale-95">Hubungi Kami</a>
+        <button id="hamburger" class="md:hidden hamburger flex flex-col gap-[6px] p-2 text-primary" aria-label="Toggle Menu">
+          <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div id="mobile-nav" class="mobile-nav md:hidden">
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="retribusi.html">Retribusi</a>
+    <a class="active" href="faq.html">FAQ</a>
+    <a href="kontak.html">Kontak & Pengaduan</a>
+  </div>
+
+  <main class="pt-24 pb-20">
+
+    <!-- ===== PAGE HEADER & BREADCRUMB ===== -->
+    <section class="max-w-7xl mx-auto px-8 mb-12">
+      <nav aria-label="Breadcrumb" class="flex mb-4 text-label text-on-surface-variant">
+        <ol class="flex items-center space-x-2">
+          <li><a class="hover:text-primary transition-colors" href="index.html">Beranda</a></li>
+          <li><span class="material-symbols-outlined text-sm">chevron_right</span></li>
+          <li class="font-semibold text-primary">FAQ</li>
+        </ol>
+      </nav>
+      <h1 class="font-headline font-extrabold text-4xl md:text-5xl text-primary tracking-tight mb-6">
+        FAQ — Pertanyaan Umum
+      </h1>
+      <p class="text-on-surface-variant text-lg max-w-2xl leading-relaxed">
+        Temukan jawaban cepat untuk pertanyaan yang paling sering diajukan mengenai layanan retribusi jasa usaha dan perpajakan di wilayah Nganjuk.
+      </p>
+    </section>
+
+    <!-- ===== SEARCH & FILTER ===== -->
+    <section class="max-w-7xl mx-auto px-8 mb-16">
+      <div class="bg-surface-container-low rounded-xl p-8 shadow-sm reveal">
+        <!-- Search Bar -->
+        <div class="relative max-w-3xl mb-10">
+          <span class="material-symbols-outlined absolute left-5 top-1/2 -translate-y-1/2 text-primary">search</span>
+          <input id="faq-search" class="w-full pl-14 pr-6 py-5 bg-surface-container-lowest rounded-lg border-none focus:ring-2 focus:ring-primary shadow-sm text-on-surface font-body text-lg placeholder:text-outline-variant transition-all" placeholder="Cari pertanyaan atau kata kunci..." type="text">
+        </div>
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap gap-3">
+          <button class="faq-filter-btn px-6 py-2.5 rounded-full bg-primary text-on-primary font-headline font-bold text-sm shadow-md transition-all" data-category="all">Semua</button>
+          <button class="faq-filter-btn px-6 py-2.5 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-surface-variant font-headline font-bold text-sm transition-all" data-category="pendaftaran">Pendaftaran</button>
+          <button class="faq-filter-btn px-6 py-2.5 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-surface-variant font-headline font-bold text-sm transition-all" data-category="pembayaran">Pembayaran</button>
+          <button class="faq-filter-btn px-6 py-2.5 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-surface-variant font-headline font-bold text-sm transition-all" data-category="perpanjangan">Perpanjangan</button>
+          <button class="faq-filter-btn px-6 py-2.5 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-surface-variant font-headline font-bold text-sm transition-all" data-category="retribusi">Retribusi</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ACCORDION LIST ===== -->
+    <section class="max-w-4xl mx-auto px-8 mb-24">
+      <div class="space-y-4">
+
+        <!-- FAQ 1 -->
+        <details class="faq-item group bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 reveal" data-category="retribusi">
+          <summary class="flex justify-between items-center p-6 cursor-pointer list-none hover:bg-surface-container-low transition-colors">
+            <span class="font-headline font-bold text-lg text-primary">Apa itu Retribusi Jasa Usaha?</span>
+            <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300">expand_more</span>
+          </summary>
+          <div class="accordion-content px-6 pb-6 pt-2 text-on-surface-variant leading-relaxed">
+            <p>Retribusi Jasa Usaha adalah pungutan daerah sebagai pembayaran atas jasa yang disediakan oleh Pemerintah Daerah dengan menganut prinsip komersial. Jasa tersebut meliputi penyewaan aset milik daerah seperti gedung, lahan, videotron, dan fasilitas promosi lainnya yang dikelola oleh UPT PPD Nganjuk.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details class="faq-item group bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 reveal" data-category="pendaftaran">
+          <summary class="flex justify-between items-center p-6 cursor-pointer list-none hover:bg-surface-container-low transition-colors">
+            <span class="font-headline font-bold text-lg text-primary">Bagaimana prosedur pengajuan pemanfaatan aset retribusi?</span>
+            <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300">expand_more</span>
+          </summary>
+          <div class="accordion-content px-6 pb-6 pt-2 text-on-surface-variant leading-relaxed">
+            <p>Prosedur pengajuan meliputi 5 tahap: (1) Pemohon mengajukan surat permohonan pemanfaatan aset, (2) Tim melakukan verifikasi kelayakan dan ketersediaan objek, (3) Pembayaran retribusi sesuai tarif resmi yang berlaku, (4) Penandatanganan dokumen perjanjian pemanfaatan, dan (5) Objek dapat digunakan sesuai durasi yang telah disepakati. Detail lebih lanjut dapat dilihat di halaman <a href="retribusi.html" class="text-primary font-bold hover:underline">Informasi Retribusi</a>.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details class="faq-item group bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 reveal" data-category="pendaftaran">
+          <summary class="flex justify-between items-center p-6 cursor-pointer list-none hover:bg-surface-container-low transition-colors">
+            <span class="font-headline font-bold text-lg text-primary">Apa saja persyaratan untuk mengajukan pemanfaatan aset?</span>
+            <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300">expand_more</span>
+          </summary>
+          <div class="accordion-content px-6 pb-6 pt-2 text-on-surface-variant leading-relaxed">
+            <p>Persyaratan umum meliputi: Kartu Identitas (KTP) Pemohon, Akta Pendirian (jika badan hukum), NPWP Pemohon/Perusahaan, dan Surat Pernyataan Kesanggupan Membayar. Dokumen-dokumen ini harus dilengkapi sebelum proses verifikasi dapat dilanjutkan.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 4 -->
+        <details class="faq-item group bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 reveal" data-category="pembayaran">
+          <summary class="flex justify-between items-center p-6 cursor-pointer list-none hover:bg-surface-container-low transition-colors">
+            <span class="font-headline font-bold text-lg text-primary">Berapa tarif pemasangan banner/spanduk di area kantor?</span>
+            <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300">expand_more</span>
+          </summary>
+          <div class="accordion-content px-6 pb-6 pt-2 text-on-surface-variant leading-relaxed">
+            <p>Tarif tergantung ukuran: (1) Ukuran 1-4m² sebesar Rp30.000/m²/bulan, (2) Ukuran 4-8m² sebesar Rp45.000/m²/bulan, dan (3) Ukuran &gt;8m² sebesar Rp65.000/m²/bulan. Tarif ini berdasarkan Pergub Jawa Timur Nomor 20 Tahun 2025. Tabel lengkap tersedia di halaman <a href="retribusi.html" class="text-primary font-bold hover:underline">Retribusi</a>.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 5 -->
+        <details class="faq-item group bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 reveal" data-category="pembayaran">
+          <summary class="flex justify-between items-center p-6 cursor-pointer list-none hover:bg-surface-container-low transition-colors">
+            <span class="font-headline font-bold text-lg text-primary">Bagaimana metode pembayaran retribusi?</span>
+            <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300">expand_more</span>
+          </summary>
+          <div class="accordion-content px-6 pb-6 pt-2 text-on-surface-variant leading-relaxed">
+            <p>Pembayaran retribusi dapat dilakukan secara langsung melalui bendahara penerimaan di kantor UPT PPD Nganjuk atau melalui transfer ke rekening resmi Pemerintah Provinsi Jawa Timur. Bukti pembayaran wajib disimpan sebagai bagian dari dokumen perjanjian pemanfaatan aset.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 6 -->
+        <details class="faq-item group bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 reveal" data-category="perpanjangan">
+          <summary class="flex justify-between items-center p-6 cursor-pointer list-none hover:bg-surface-container-low transition-colors">
+            <span class="font-headline font-bold text-lg text-primary">Apakah perpanjangan masa pemanfaatan aset bisa dilakukan?</span>
+            <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300">expand_more</span>
+          </summary>
+          <div class="accordion-content px-6 pb-6 pt-2 text-on-surface-variant leading-relaxed">
+            <p>Ya, perpanjangan masa pemanfaatan dapat dilakukan dengan mengajukan surat permohonan perpanjangan minimal 14 hari kerja sebelum masa perjanjian berakhir. Tarif perpanjangan mengikuti tarif yang berlaku saat itu sesuai Pergub terbaru.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 7 -->
+        <details class="faq-item group bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 reveal" data-category="retribusi">
+          <summary class="flex justify-between items-center p-6 cursor-pointer list-none hover:bg-surface-container-low transition-colors">
+            <span class="font-headline font-bold text-lg text-primary">Apa saja jenis objek retribusi yang tersedia di UPT PPD Nganjuk?</span>
+            <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300">expand_more</span>
+          </summary>
+          <div class="accordion-content px-6 pb-6 pt-2 text-on-surface-variant leading-relaxed">
+            <p>Objek retribusi yang tersedia meliputi: Pemakaian Ruang/Gedung Kantor, Pemasangan Spanduk/Banner/Baliho, Lahan Kegiatan Promosi (Tenda/Non Tenda), Mesin Penjualan Otomatis/Manual, Foodtruck/Mobil Usaha, Kotak Promosi/Brosur, Running Text LED, Highlight TV, Neonbox/Billboard/LED, dan Pemanfaatan Lahan untuk Lembaga Keuangan/Non Keuangan.</p>
+          </div>
+        </details>
+
+        <!-- FAQ 8 -->
+        <details class="faq-item group bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 reveal" data-category="perpanjangan">
+          <summary class="flex justify-between items-center p-6 cursor-pointer list-none hover:bg-surface-container-low transition-colors">
+            <span class="font-headline font-bold text-lg text-primary">Apa yang terjadi jika masa perjanjian habis tanpa perpanjangan?</span>
+            <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300">expand_more</span>
+          </summary>
+          <div class="accordion-content px-6 pb-6 pt-2 text-on-surface-variant leading-relaxed">
+            <p>Jika masa perjanjian habis dan tidak dilakukan perpanjangan, pemohon wajib mengembalikan aset/lahan dalam kondisi semula. Pelanggaran terhadap ketentuan ini dapat dikenakan sanksi administratif sesuai peraturan yang berlaku.</p>
+          </div>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section class="max-w-5xl mx-auto px-8 reveal">
+      <div class="bg-primary text-on-primary rounded-2xl p-12 text-center relative overflow-hidden shadow-2xl">
+        <div class="absolute inset-0 opacity-10 pointer-events-none" style="background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);"></div>
+        <h2 class="font-headline font-extrabold text-3xl mb-4 relative z-10">Tidak menemukan jawaban?</h2>
+        <p class="text-on-primary/80 text-lg mb-8 max-w-xl mx-auto relative z-10">
+          Tim dukungan kami siap membantu Anda memberikan informasi lebih detail mengenai layanan retribusi jasa usaha.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 relative z-10">
+          <a href="kontak.html" class="bg-tertiary-fixed text-on-tertiary-fixed px-8 py-3 rounded-md font-headline font-bold hover:scale-105 transition-transform flex items-center gap-2">
+            <span class="material-symbols-outlined">mail</span> Hubungi Kami
+          </a>
+          <a href="https://wa.me/628113136111" target="_blank" class="bg-primary-container text-on-primary-container px-8 py-3 rounded-md font-headline font-bold hover:bg-opacity-90 transition-all border border-on-primary-container/20">
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-surface-container-low w-full pt-16 pb-8 font-plus-jakarta-sans text-sm md:text-base mt-20">
+    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-20">
+      <div>
+        <div class="text-2xl font-black text-primary mb-6">UPT PPD Nganjuk</div>
+        <p class="text-on-surface-variant leading-relaxed max-w-sm">Unit Pelaksana Teknis Pengelolaan Pendapatan Daerah Nganjuk</p>
+        <p class="text-on-surface-variant leading-relaxed max-w-sm mt-1">Jalan Anjuk Ladang Kotak Pos 7, Bedingin, Sukorejo, Kab. Nganjuk</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-primary mb-6 uppercase tracking-wider">Navigasi</h4>
+        <div class="flex flex-col gap-3">
+          <a class="text-on-surface-variant hover:text-tertiary transition-colors" href="index.html">Beranda</a>
+          <a class="text-on-surface-variant hover:text-tertiary transition-colors" href="profil.html">Profil</a>
+          <a class="text-on-surface-variant hover:text-tertiary transition-colors" href="retribusi.html">Retribusi</a>
+          <a class="font-bold text-primary" href="faq.html">FAQ</a>
+          <a class="text-on-surface-variant hover:text-tertiary transition-colors" href="kontak.html">Kontak</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-bold text-primary mb-6 uppercase tracking-wider">Layanan</h4>
+        <div class="flex flex-col gap-3">
+          <a class="text-on-surface-variant hover:text-tertiary transition-colors" href="retribusi.html">Info Retribusi</a>
+          <a class="text-on-surface-variant hover:text-tertiary transition-colors" href="faq.html">FAQ</a>
+          <a class="text-on-surface-variant hover:text-tertiary transition-colors" href="kontak.html">Pengaduan</a>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-outline-variant/20">
+      <p class="text-center text-on-surface-variant">© 2026 UPT PPD Nganjuk. Bapenda Jawa Timur.</p>
+    </div>
+  </footer>
+
+  <!-- Floating Elements -->
+  <div class="fixed bottom-8 right-8 z-[99]">
+    <div class="group relative flex items-center justify-center">
+      <div class="absolute right-full mr-4 bg-tertiary-fixed text-on-tertiary-fixed px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap font-headline font-bold text-sm shadow-lg pointer-events-none">Chat Sekarang</div>
+      <a href="https://wa.me/628113136111" target="_blank" class="bg-tertiary-fixed text-on-tertiary-fixed rounded-full p-4 w-16 h-16 flex items-center justify-center shadow-lg hover:scale-110 hover:rotate-12 transition-transform cursor-pointer animate-bounce-subtle">
+        <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+      </a>
+    </div>
+  </div>
+  <button id="back-to-top" class="back-to-top bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg hover:scale-110 transition-transform" aria-label="Kembali ke atas">
+    <span class="material-symbols-outlined">keyboard_arrow_up</span>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

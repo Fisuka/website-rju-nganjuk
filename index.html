@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="light" lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Beranda | UPT PPD Nganjuk — Retribusi Jasa Usaha Bapenda Jawa Timur</title>
+  <meta name="description" content="Pusat informasi dan promosi Retribusi Jasa Usaha pada UPT Pengelolaan Pendapatan Daerah Kabupaten Nganjuk, Bapenda Jawa Timur.">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed":"#d5e3ff","inverse-on-surface":"#ecf1ff","on-primary":"#ffffff",
+            "on-tertiary-container":"#ffb033","on-secondary":"#ffffff","surface-dim":"#cfdaf2",
+            "primary-container":"#1a4f8b","secondary":"#405f8e","inverse-primary":"#a6c8ff",
+            "tertiary":"#4f3100","outline-variant":"#c2c6d1","on-surface":"#111c2d",
+            "on-error":"#ffffff","tertiary-container":"#6d4600","on-secondary-container":"#335381",
+            "on-primary-fixed":"#001c3b","primary-fixed-dim":"#a6c8ff","surface-container":"#e7eeff",
+            "error":"#ba1a1a","background":"#f9f9ff","on-background":"#111c2d",
+            "on-primary-container":"#9bc2ff","inverse-surface":"#263143",
+            "surface-container-low":"#f0f3ff","surface-container-lowest":"#ffffff",
+            "on-tertiary-fixed-variant":"#633f00","on-secondary-fixed":"#001c3b",
+            "surface-bright":"#f9f9ff","on-tertiary":"#ffffff","on-error-container":"#93000a",
+            "on-secondary-fixed-variant":"#264774","surface-tint":"#2f5f9c","surface":"#f9f9ff",
+            "surface-variant":"#d8e3fb","outline":"#737781","tertiary-fixed":"#ffddb4",
+            "tertiary-fixed-dim":"#ffb955","surface-container-high":"#dee8ff","primary":"#00386c",
+            "secondary-fixed-dim":"#a8c8fd","secondary-fixed":"#d5e3ff",
+            "on-surface-variant":"#424750","on-primary-fixed-variant":"#0c4783",
+            "on-tertiary-fixed":"#291800","secondary-container":"#a8c8fd",
+            "surface-container-highest":"#d8e3fb","error-container":"#ffdad6"
+          },
+          fontFamily: {
+            "headline":["Plus Jakarta Sans"],"body":["Inter"],"label":["Inter"],
+            "plus-jakarta-sans":["Plus Jakarta Sans"]
+          },
+          borderRadius: {"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-surface font-body text-on-surface antialiased">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm transition-shadow">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="text-xl font-extrabold text-primary font-headline tracking-tight">UPT PPD Nganjuk</a>
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-8 items-center absolute left-1/2 -translate-x-1/2">
+        <a class="font-headline font-bold text-sm tracking-tight text-primary border-b-2 border-primary pb-1" href="index.html">Beranda</a>
+        <a class="font-headline font-bold text-sm tracking-tight text-on-surface-variant hover:text-primary transition-colors" href="profil.html">Profil</a>
+        <a class="font-headline font-bold text-sm tracking-tight text-on-surface-variant hover:text-primary transition-colors" href="retribusi.html">Retribusi</a>
+        <a class="font-headline font-bold text-sm tracking-tight text-on-surface-variant hover:text-primary transition-colors" href="faq.html">FAQ</a>
+        <a class="font-headline font-bold text-sm tracking-tight text-on-surface-variant hover:text-primary transition-colors" href="kontak.html">Kontak</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="kontak.html" class="hidden md:inline-flex bg-primary text-on-primary px-6 py-2 rounded-md font-bold text-sm hover:opacity-90 transition-all active:scale-95">Hubungi Kami</a>
+        <!-- Hamburger (Mobile) -->
+        <button id="hamburger" class="md:hidden hamburger flex flex-col gap-[6px] p-2 text-primary" aria-label="Toggle Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- Mobile Nav Overlay -->
+  <div id="mobile-nav" class="mobile-nav md:hidden">
+    <a class="active" href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="retribusi.html">Retribusi</a>
+    <a href="faq.html">FAQ</a>
+    <a href="kontak.html">Kontak & Pengaduan</a>
+  </div>
+
+  <main class="pt-20">
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="relative min-h-[85vh] flex items-center overflow-hidden bg-primary">
+      <div class="absolute inset-0 z-0 opacity-40 mix-blend-overlay">
+        <img alt="Gedung UPT PPD Nganjuk" class="w-full h-full object-cover"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIXmKC9vsSGuHeg_2JDjqReY7PTai00j6MdiY-YaT5nWn4zskKE_ohb-wusN2imWg61YLXvIWIig6cPaBj2cFoRaPwiY2BnvvVxLvxcFpQJmrRZtej7kNB-hezYNDGm8BqKdSPXrpbuzAmUM26yORV2EyW31IIt2xChb5AKkcImf3WfK9tVYrwyyOM2NI0aSCk_7aYmuJmrorVJ0vyaQmeMDpMWEH2mwLfX-F8EzhID6PTSa_MOPQ7MBAtVu-SNu3gVMz1Zr48QVM">
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-tr from-primary via-primary/80 to-transparent z-10"></div>
+      <div class="relative z-20 max-w-7xl mx-auto px-8 w-full">
+        <div class="max-w-3xl">
+          <span class="inline-block px-4 py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-headline font-bold text-xs tracking-widest uppercase mb-6 reveal">
+            Bapenda Jawa Timur
+          </span>
+          <h1 class="text-5xl md:text-7xl font-headline font-extrabold text-white leading-[1.1] tracking-tighter mb-6 reveal">
+            Website Retribusi Jasa Usaha <span class="text-tertiary-fixed">UPT PPD Nganjuk</span>
+          </h1>
+          <p class="text-lg md:text-xl text-on-primary-container font-body leading-relaxed mb-10 max-w-2xl reveal">
+            Pusat Informasi &amp; Promosi Layanan Retribusi Jasa Usaha yang transparan, akuntabel, dan berorientasi pada kemajuan ekonomi daerah.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 reveal">
+            <a href="retribusi.html"
+              class="bg-primary-container hover:bg-primary text-white px-8 py-4 rounded-md font-headline font-bold text-base transition-all flex items-center justify-center gap-2 group">
+              Lihat Retribusi
+              <span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+            <a href="kontak.html"
+              class="bg-surface/10 hover:bg-surface/20 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-md font-headline font-bold text-base transition-all text-center">
+              Hubungi Kami
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TENTANG SINGKAT ===== -->
+    <section class="py-24 bg-surface">
+      <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+        <div class="relative reveal">
+          <div class="aspect-[4/3] rounded-xl overflow-hidden shadow-2xl z-10 relative">
+            <img alt="Kantor UPT PPD Nganjuk" class="w-full h-full object-cover" src="assets/images/UPT PPD Nganjuk.jpg">
+          </div>
+          <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-tertiary-fixed rounded-xl -z-0 opacity-50"></div>
+        </div>
+        <div class="reveal">
+          <h2 class="text-sm font-headline font-extrabold text-tertiary tracking-widest uppercase mb-4">Tentang Kami</h2>
+          <h3 class="text-4xl font-headline font-bold text-on-surface leading-tight mb-6">Mewujudkan Tata Kelola Retribusi yang Modern &amp; Profesional</h3>
+          <p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+            UPT PPD Nganjuk di bawah naungan Bapenda Jawa Timur berkomitmen penuh dalam optimalisasi potensi daerah melalui pengelolaan retribusi jasa usaha yang transparan. Kami hadir untuk memfasilitasi kebutuhan publik dengan standar layanan prima.
+          </p>
+          <a class="inline-flex items-center gap-2 text-primary font-headline font-extrabold group" href="profil.html">
+            Lihat Profil
+            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">chevron_right</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LAYANAN UNGGULAN ===== -->
+    <section class="py-24 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="text-center mb-16 reveal">
+          <h2 class="text-4xl font-headline font-bold text-on-surface mb-4">Layanan Unggulan Kami</h2>
+          <p class="text-on-surface-variant max-w-2xl mx-auto">Berbagai fasilitas jasa usaha yang dapat dimanfaatkan untuk mendukung kegiatan bisnis dan sosial masyarakat.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div class="bg-surface-container-lowest p-8 rounded-xl tonal-volumetrics transition-all hover:-translate-y-2 reveal">
+            <div class="w-14 h-14 rounded-lg bg-primary-fixed flex items-center justify-center mb-6">
+              <span class="material-symbols-outlined text-primary text-3xl">real_estate_agent</span>
+            </div>
+            <h4 class="text-xl font-headline font-bold text-on-surface mb-3">Sewa Lahan</h4>
+            <p class="text-on-surface-variant leading-relaxed">Pemanfaatan lahan strategis milik daerah untuk berbagai keperluan komersial jangka pendek maupun panjang.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-surface-container-lowest p-8 rounded-xl tonal-volumetrics transition-all hover:-translate-y-2 reveal">
+            <div class="w-14 h-14 rounded-lg bg-tertiary-fixed flex items-center justify-center mb-6">
+              <span class="material-symbols-outlined text-tertiary text-3xl">apartment</span>
+            </div>
+            <h4 class="text-xl font-headline font-bold text-on-surface mb-3">Sewa Gedung</h4>
+            <p class="text-on-surface-variant leading-relaxed">Penyediaan fasilitas gedung pertemuan dan ruang serbaguna dengan fasilitas pendukung yang lengkap.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-surface-container-lowest p-8 rounded-xl tonal-volumetrics transition-all hover:-translate-y-2 reveal">
+            <div class="w-14 h-14 rounded-lg bg-primary-fixed flex items-center justify-center mb-6">
+              <span class="material-symbols-outlined text-primary text-3xl">tv</span>
+            </div>
+            <h4 class="text-xl font-headline font-bold text-on-surface mb-3">Videotron</h4>
+            <p class="text-on-surface-variant leading-relaxed">Penyediaan fasilitas videotron berfungsi untuk promosi berbagai komersial jangka pendek maupun panjang.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATISTIK ===== -->
+    <section class="py-20 bg-primary">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div class="reveal">
+            <span class="block text-4xl md:text-5xl font-headline font-extrabold text-white mb-2" data-count="40" data-suffix="+">0</span>
+            <span class="text-on-primary-container text-sm font-label">Tahun Melayani</span>
+          </div>
+          <div class="reveal">
+            <span class="block text-4xl md:text-5xl font-headline font-extrabold text-white mb-2" data-count="20" data-suffix="+">0</span>
+            <span class="text-on-primary-container text-sm font-label">Titik Layanan</span>
+          </div>
+          <div class="reveal">
+            <span class="block text-4xl md:text-5xl font-headline font-extrabold text-tertiary-fixed mb-2" data-count="15" data-suffix="+">0</span>
+            <span class="text-on-primary-container text-sm font-label">Jenis Retribusi</span>
+          </div>
+          <div class="reveal">
+            <span class="block text-4xl md:text-5xl font-headline font-extrabold text-white mb-2" data-count="50" data-suffix="+">0</span>
+            <span class="text-on-primary-container text-sm font-label">Mitra Aktif</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA BANNER ===== -->
+    <section class="py-24 reveal">
+      <div class="max-w-5xl mx-auto px-8">
+        <div class="bg-tertiary-fixed rounded-2xl p-12 text-center md:flex items-center justify-between text-left">
+          <div class="mb-8 md:mb-0 max-w-xl">
+            <h2 class="text-3xl font-headline font-bold text-on-tertiary-fixed mb-2">Punya pertanyaan mengenai retribusi?</h2>
+            <p class="text-on-tertiary-fixed-variant opacity-80">Temukan jawaban cepat mengenai prosedur, tarif, dan syarat layanan di halaman tanya jawab kami.</p>
+          </div>
+          <a class="inline-block bg-tertiary text-white px-8 py-4 rounded-md font-headline font-bold text-base hover:scale-105 transition-transform active:scale-95" href="faq.html">
+            Lihat FAQ
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-surface-container-low w-full pt-16 pb-8 font-plus-jakarta-sans text-sm md:text-base">
+    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-20">
+      <div>
+        <div class="text-2xl font-black text-primary mb-6">UPT PPD Nganjuk</div>
+        <p class="text-on-surface-variant leading-relaxed max-w-sm">Unit Pelaksana Teknis Pengelolaan Pendapatan Daerah Nganjuk</p>
+        <p class="text-on-surface-variant leading-relaxed max-w-sm mt-1">Jalan Anjuk Ladang Kotak Pos 7, Bedingin, Sukorejo, Kab. Nganjuk</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-primary mb-6 uppercase tracking-wider">Navigasi</h4>
+        <div class="flex flex-col gap-3">
+          <a class="font-bold text-primary" href="index.html">Beranda</a>
+          <a class="text-on-surface-variant hover:text-tertiary transition-colors" href="profil.html">Profil</a>
+          <a class="text-on-surface-variant hover:text-tertiary transition-colors" href="retribusi.html">Retribusi</a>
+          <a class="text-on-surface-variant hover:text-tertiary transition-colors" href="faq.html">FAQ</a>
+          <a class="text-on-surface-variant hover:text-tertiary transition-colors" href="kontak.html">Kontak</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-bold text-primary mb-6 uppercase tracking-wider">Layanan</h4>
+        <div class="flex flex-col gap-3">
+          <a class="text-on-surface-variant hover:text-tertiary transition-colors" href="retribusi.html">Info Retribusi</a>
+          <a class="text-on-surface-variant hover:text-tertiary transition-colors" href="faq.html">FAQ</a>
+          <a class="text-on-surface-variant hover:text-tertiary transition-colors" href="kontak.html">Pengaduan</a>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-outline-variant/20">
+      <p class="text-center text-on-surface-variant">© 2026 UPT PPD Nganjuk. Bapenda Jawa Timur.</p>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING ELEMENTS ===== -->
+  <!-- WhatsApp -->
+  <div class="fixed bottom-8 right-8 z-[99]">
+    <div class="group relative flex items-center justify-center">
+      <div class="absolute right-full mr-4 bg-tertiary-fixed text-on-tertiary-fixed px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap font-headline font-bold text-sm shadow-lg pointer-events-none">
+        WhatsApp Support
+      </div>
+      <a href="https://wa.me/628113136111" target="_blank"
+        class="bg-tertiary-fixed text-on-tertiary-fixed rounded-full p-4 w-16 h-16 flex items-center justify-center shadow-lg hover:scale-110 hover:rotate-12 transition-transform cursor-pointer animate-bounce-subtle">
+        <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+      </a>
+    </div>
+  </div>
+  <!-- Back to Top -->
+  <button id="back-to-top" class="back-to-top bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg hover:scale-110 transition-transform" aria-label="Kembali ke atas">
+    <span class="material-symbols-outlined">keyboard_arrow_up</span>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
