@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="light" lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Galeri Katalog | UPT PPD Nganjuk</title>
+  <meta name="description" content="Galeri dan katalog visual jenis layanan retribusi jasa usaha di UPT PPD Nganjuk.">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed": "#d5e3ff", "inverse-on-surface": "#ecf1ff", "on-primary": "#ffffff",
+            "primary-container": "#1a4f8b", "secondary": "#405f8e",
+            "on-surface": "#111c2d", "on-secondary-container": "#335381",
+            "surface-container": "#e7eeff", "background": "#f9f9ff",
+            "surface-container-low": "#f0f3ff", "surface-container-lowest": "#ffffff",
+            "surface": "#f9f9ff", "surface-variant": "#d8e3fb",
+            "outline": "#737781", "tertiary-fixed": "#ffddb4",
+            "surface-container-high": "#dee8ff", "primary": "#00386c",
+            "on-surface-variant": "#424750", "surface-container-highest": "#d8e3fb"
+          },
+          fontFamily: {
+            "headline": ["Plus Jakarta Sans"], "body": ["Inter"]
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Zoom effect on hover for large gallery images */
+    .gallery-card {
+      overflow: hidden;
+      border-radius: 1rem;
+      position: relative;
+    }
+
+    .gallery-card img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+      display: block;
+    }
+
+    .gallery-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+      padding: 2rem 1.5rem 1rem 1.5rem;
+      color: white;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.4s ease;
+    }
+
+    .gallery-card:hover .gallery-overlay {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body class="bg-surface font-body text-on-surface antialiased selection:bg-primary-fixed">
+
+  <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm transition-shadow tonal-volumetrics">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="text-xl font-extrabold text-primary font-headline tracking-tight">UPT PPD Nganjuk</a>
+      <div class="hidden md:flex gap-8 items-center flex-1 justify-center">
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-headline font-bold text-sm tracking-tight"
+          href="index.html">Beranda</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-headline font-bold text-sm tracking-tight"
+          href="profil.html">Profil</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-headline font-bold text-sm tracking-tight"
+          href="retribusi.html">Retribusi</a>
+        <a class="text-primary border-b-2 border-primary pb-1 font-headline font-bold text-sm tracking-tight"
+          href="galeri.html">Galeri</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-headline font-bold text-sm tracking-tight"
+          href="faq.html">FAQ</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-headline font-bold text-sm tracking-tight"
+          href="kontak.html">Kontak</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="kontak.html"
+          class="hidden md:inline-flex bg-primary text-on-primary px-6 py-2 rounded-md font-bold text-sm hover:opacity-90 transition-all active:scale-95">Hubungi
+          Kami</a>
+        <button id="hamburger" class="md:hidden hamburger flex flex-col gap-[6px] p-2 text-primary"
+          aria-label="Toggle Menu">
+          <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div id="mobile-nav" class="mobile-nav md:hidden">
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="retribusi.html">Retribusi</a>
+    <a class="active" href="galeri.html">Galeri Katalog</a>
+    <a href="faq.html">FAQ</a>
+    <a href="kontak.html">Kontak & Pengaduan</a>
+  </div>
+
+  <main class="pt-24 pb-20">
+
+    <section class="max-w-7xl mx-auto px-8 mb-12">
+      <nav aria-label="Breadcrumb" class="flex mb-4 text-sm font-semibold text-on-surface-variant">
+        <ol class="flex items-center space-x-2">
+          <li><a class="hover:text-primary transition-colors" href="index.html">Beranda</a></li>
+          <li><span class="material-symbols-outlined text-sm">chevron_right</span></li>
+          <li class="text-primary">Galeri Katalog</li>
+        </ol>
+      </nav>
+      <h1 class="font-headline font-extrabold text-4xl md:text-5xl text-primary tracking-tight mb-4">
+        Katalog Jenis Retribusi
+      </h1>
+      <p class="text-on-surface-variant text-lg max-w-3xl leading-relaxed">
+        Berikut adalah dokumentasi visual dari beberapa penempatan booth dan media promosi retribusi jasa usaha yang
+        tersedia di area layanan UPT PPD Nganjuk.
+      </p>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-8 mb-24">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+        <div class="gallery-card bg-surface-container-lowest shadow-lg tonal-volumetrics reveal">
+          <img
+            src="assets/images/Es Teh Solo Besar.png"
+            alt="Booth Promosi Es Teh SOLO (Indoor)" class="w-full aspect-[4/3] object-cover bg-white">
+          <div class="gallery-overlay">
+            <h3 class="font-headline font-bold text-2xl mb-1">Booth Promosi (Indoor)</h3>
+            <p class="text-sm opacity-90">Contoh pemanfaatan lahan untuk tenant F&B (Es Teh S.O.L.O)</p>
+          </div>
+        </div>
+
+        <div class="gallery-card bg-surface-container-lowest shadow-lg tonal-volumetrics reveal">
+          <img
+            src="assets/images/Es Teh Solo Kecil.png"
+            alt="Paket Booth Portable Es Teh Solo" class="w-full aspect-[4/3] object-cover bg-white">
+          <div class="gallery-overlay">
+            <h3 class="font-headline font-bold text-2xl mb-1">Booth Portable</h3>
+            <p class="text-sm opacity-90">Penempatan stand portable di area strategis ruang tunggu</p>
+          </div>
+        </div>
+
+        <div class="gallery-card bg-surface-container-lowest shadow-lg tonal-volumetrics reveal">
+          <img src="assets/images/Miniso.png"
+            alt="Pameran / Stand MINISO" class="w-full aspect-[4/3] object-cover bg-white">
+          <div class="gallery-overlay">
+            <h3 class="font-headline font-bold text-2xl mb-1">Stand Pameran / Retail</h3>
+            <p class="text-sm opacity-90">Pemanfaatan ruang untuk pameran retail berskala sedang (MINISO)</p>
+          </div>
+        </div>
+
+        <div class="gallery-card bg-surface-container-lowest shadow-lg tonal-volumetrics reveal">
+          <img src="assets/images/Mixue.png"
+            alt="Stand Promosi Mixue" class="w-full aspect-[4/3] object-cover bg-white">
+          <div class="gallery-overlay">
+            <h3 class="font-headline font-bold text-2xl mb-1">Stand Khusus Semi-Permanen</h3>
+            <p class="text-sm opacity-90">Fasilitas lahan untuk booth dengan struktur desain khusus (Mixue)</p>
+          </div>
+        </div>
+
+        <div class="gallery-card bg-surface-container-lowest shadow-lg tonal-volumetrics reveal">
+          <img src="assets/images/MR DIY.png"
+            alt="Stand MR. DIY di Area Layanan" class="w-full aspect-[4/3] object-cover bg-white">
+          <div class="gallery-overlay">
+            <h3 class="font-headline font-bold text-2xl mb-1">Area Pameran Terbuka (Open Space)</h3>
+            <p class="text-sm opacity-90">Pemanfaatan lahan luas untuk pameran promosi terpadu beserta staf marketing
+              (MR. D.I.Y)</p>
+          </div>
+        </div>
+
+        <div class="gallery-card bg-surface-container-lowest shadow-lg tonal-volumetrics reveal">
+          <img src="assets/images/Tomoro.png"
+            alt="Stand Tomoro Coffee" class="w-full aspect-[4/3] object-cover bg-white">
+          <div class="gallery-overlay">
+            <h3 class="font-headline font-bold text-2xl mb-1">Area Pameran Terbuka (Open Space)</h3>
+            <p class="text-sm opacity-90">Pemanfaatan ruang untuk pameran retail berskala sedang (Tomoro)</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-surface-container-low w-full pt-16 pb-8 font-headline text-sm md:text-base">
+    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div>
+        <div class="text-2xl font-black text-primary mb-4">UPT PPD Nganjuk</div>
+        <p class="text-on-surface-variant max-w-sm">Jalan Anjuk Ladang Kotak Pos 7, Bedingin, Sukorejo, Kab. Nganjuk</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-primary mb-4 uppercase">Navigasi</h4>
+        <div class="flex flex-col gap-2">
+          <a class="text-on-surface-variant hover:text-primary transition-colors" href="index.html">Beranda</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors" href="retribusi.html">Retribusi</a>
+          <a class="font-bold text-primary" href="galeri.html">Galeri</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors" href="kontak.html">Kontak</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-bold text-primary mb-4 uppercase">Layanan</h4>
+        <div class="flex flex-col gap-2">
+          <a class="text-on-surface-variant hover:text-primary transition-colors" href="faq.html">Pertanyaan Umum
+            (FAQ)</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors" href="kontak.html">Pengaduan</a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-outline-variant/20 text-center text-on-surface-variant text-sm">
+      © 2026 UPT PPD Nganjuk. Bapenda Jawa Timur.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
