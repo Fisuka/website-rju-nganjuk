@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Build WhatsApp message
       const waMessage = encodeURIComponent(
-        `*Formulir Pengaduan - Website RJU*\n\n` +
+        `*Pengajuan - Retribusi Jasa Usaha Samsat Nganjuk*\n\n` +
         `*Nama:* ${nama}\n` +
         `*No. HP:* ${hp}\n` +
         `*Kategori:* ${kategori}\n` + 
