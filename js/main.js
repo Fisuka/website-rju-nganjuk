@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
       );
       
       // Open WhatsApp with pre-filled message
-      window.open(`https://wa.me/628113136111?text=${waMessage}`, '_blank');
+      window.open(`https://wa.me/6285936626368?text=${waMessage}`, '_blank');
       
       // Show success feedback
       const submitBtn = contactForm.querySelector('button[type="submit"]');
